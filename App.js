@@ -11,7 +11,7 @@ import {
     Text,
     View
 } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import {TabNavigator} from 'react-navigation';
 import Popular from './src/pages/Popular'
 import Trending from './src/pages/Trending'
@@ -24,7 +24,7 @@ const TabNav = TabNavigator({
         navigationOptions: {
             tabBarLabel: '流行',
             tabBarIcon: ({tintColor, focused}) => (
-                focused ? <Icon name="ios-flame" size={22} color={tintColor}/> : <Icon name="ios-flame-outline" size={22} color={tintColor}/>
+                focused ? <Icon name="home" size={22} color={tintColor}/> : <Icon name="home" size={22} color={tintColor}/>
             )
         }
     },
@@ -33,7 +33,7 @@ const TabNav = TabNavigator({
         navigationOptions: {
             tabBarLabel: '趋势',
             tabBarIcon: ({tintColor, focused}) => (
-                focused ? <Icon name="ios-bulb" size={22} color={tintColor}/> : <Icon name="ios-bulb-outline" size={22} color={tintColor}/>
+                focused ? <Icon name="home" size={22} color={tintColor}/> : <Icon name="home" size={22} color={tintColor}/>
             )
         }
     },
@@ -42,7 +42,7 @@ const TabNav = TabNavigator({
         navigationOptions: {
             tabBarLabel: '流行',
             tabBarIcon: ({tintColor, focused}) => (
-                focused ? <Icon name="ios-heart" size={22} color={tintColor}/> : <Icon name="ios-heart-outline" size={22} color={tintColor}/>
+                focused ? <Icon name="home" size={22} color={tintColor}/> : <Icon name="home" size={22} color={tintColor}/>
             )
         }
     },
@@ -51,7 +51,7 @@ const TabNav = TabNavigator({
         navigationOptions: {
             tabBarLabel: '我的',
             tabBarIcon: ({tintColor, focused}) => (
-                focused ? <Icon name="ios-person" size={22} color={tintColor}/> : <Icon name="ios-person-outline" size={22} color={tintColor}/>
+                focused ? <Icon name="home" size={22} color={tintColor}/> : <Icon name="home" size={22} color={tintColor}/>
             )
         }
     }
@@ -82,8 +82,7 @@ const TabNav = TabNavigator({
     },
 });
 
-type Props = {};
-export default class App extends Component<Props> {
+export default class App extends Component {
     render() {
         return (
             <TabNav/>
@@ -91,5 +90,4 @@ export default class App extends Component<Props> {
     }
 }
 
-const styles = StyleSheet.create({
-});
+const styles = StyleSheet.create({});
